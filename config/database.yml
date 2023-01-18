@@ -27,3 +27,7 @@ production:
   username: <%= Rails.application.credentials.db[:username] %>
   password: <%= Rails.application.credentials.db[:password] %>
   socket: <%= Rails.application.credentials.db[:socket] %>
+  #database: NekoSNS3
+  #username: root
+  #password: Katura007!
+  #socket: /var/lib/mysql/mysql.sock
