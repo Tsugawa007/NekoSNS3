@@ -16,9 +16,9 @@
     <header>
       <div class="header-logo">
         <% if @current_user %>
-          <%= link_to("NekoSNS", "/posts/index") %>
+          <%= link_to("Neko自慢会", "/posts/index") %>
         <% else %>
-          <%= link_to("NekoSNS", "/") %>
+          <%= link_to("Neko自慢会", "/") %>
         <% end %>
       </div>
       <ul class="header-menus">
@@ -40,7 +40,7 @@
           </li>
         <% else %>
           <li>
-            <%= link_to("NekoSNSとは", "/about") %>
+            <%= link_to("Neko自慢会とは", "/about") %>
           </li>
           <li>
             <%= link_to("新規登録", "/signup") %>
