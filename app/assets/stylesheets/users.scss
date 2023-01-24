@@ -1,21 +1,21 @@
 /* users/index ================================ */
-.users-heading {
+ .users-heading {
     font-weight: 300;
     margin: 60px 0 20px;
     font-size: 48px;
     color: #deb887;
     border-bottom: solid 10px #deb887;
     
-  }
+ }
   
-  .users-index-item {
+ .users-index-item {
     padding: 20px 30px;
     background-color: white;
     overflow: hidden;
     box-shadow: 0 2px 6px #c1ced7;
     display: table;
     width: 100%;
-  }
+ }
   
   .user-left img {
     width: 50px;
@@ -117,4 +117,143 @@
     margin-bottom: 15px;
   }
 
+  .users-new .form-heading {
+    position: relative;
+    padding-left: 1.2em;
+    line-height: 1.4;
+  }
+ .users-new .form-heading:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f1b0";
+    font-weight: 900;
+    position: absolute;
+    font-size: 1.0em;
+    left: 0;
+    top: 0;
+    color: #ff938b;
+    -webkit-animation:blink 0.5s ease-in-out infinite alternate;
+    animation:blink 0.5s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+.users-new .form-body {
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+    color: #565656;
+    background: white;
+    box-shadow: 0px 0px 0px 10px white;
+    border: dashed 2px #deb887;
+    border-radius: 8px;
+}
+.users-new .form-body p{
+    margin: 0; 
+    padding: 0;
+}
+
+
+.users-new #login-button {
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  background: #deb887; 
+  color: #fff;
+  font-weight: bold;
+  padding: 13px 10px 10px;
+  border-radius: 5px;
+  border-bottom: 5px solid rgba(0,0,0,0.3);
+}
+.users-new #login-button:hover {
+  animation: 1s flash;
+}
+.users-new #login-button:active, #login-button:focus {
+  border-bottom-width: 0;
+  margin-top: 5px;
+  background: #deb887; 
+}
+
+@keyframes flash {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+   /* users/login_form ================================ */
+
+  .users-login .form-heading {
+    position: relative;
+    padding-left: 1.2em;
+    line-height: 1.4;
+  }
+ .users-login .form-heading:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f1b0";
+    font-weight: 900;
+    position: absolute;
+    font-size: 1.0em;
+    left: 0;
+    top: 0;
+    color: #ff938b;
+    -webkit-animation:blink 0.5s ease-in-out infinite alternate;
+    animation:blink 0.5s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+.users-login .form-body {
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+    color: #565656;
+    background: white;
+    box-shadow: 0px 0px 0px 10px white;
+    border: dashed 2px #deb887;
+    border-radius: 8px;
+}
+.users-login .form-body p{
+    margin: 0; 
+    padding: 0;
+}
+
+
+.users-login #login-button {
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  background: #deb887; 
+  color: #fff;
+  font-weight: bold;
+  padding: 13px 10px 10px;
+  border-radius: 5px;
+  border-bottom: 5px solid rgba(0,0,0,0.3);
+}
+.users-login #login-button:hover {
+  animation: 1s flash;
+}
+.users-login #login-button:active, #login-button:focus {
+  border-bottom-width: 0;
+  margin-top: 5px;
+  background: #deb887; 
+}
+
+@keyframes flash {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
  
