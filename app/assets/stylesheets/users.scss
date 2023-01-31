@@ -4,10 +4,8 @@
     margin: 60px 0 20px;
     font-size: 48px;
     color: #deb887;
-    border-bottom: solid 10px #deb887;
     
- }
-  
+ }  
  .users-index-item {
     padding: 20px 30px;
     background-color: white;
@@ -112,8 +110,34 @@
     color: #afb6bf;
   }
   
-  /* users/new, users/edit ================================ */
-  .users-form input {
+  /*users-edit====*/
+ .users-edit #submit-button{
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+  background: #deb887; 
+  color: #fff;
+  font-weight: bold;
+  padding: 13px 10px 10px;
+  border-radius: 5px;
+  border-bottom: 5px solid rgba(0,0,0,0.3);
+ }
+
+ .users-edit #submit-button:hover {
+  animation: 1s flash;
+}
+.users-edit #submit-button:active, #submit-button:focus {
+  border-bottom-width: 0;
+  margin-top: 5px;
+  background: #deb887; 
+}
+
+
+  /* users/new,  ================================ */
+  .users-new .users-form input {
     margin-bottom: 15px;
   }
 
