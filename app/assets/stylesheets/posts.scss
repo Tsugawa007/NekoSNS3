@@ -1,3 +1,4 @@
+
 /* posts/index ================================ */
 .posts-index-item {
     padding: 20px 30px;
@@ -39,7 +40,7 @@
     display: inline;
   }
   
-  .posts-show-item {
+  .posts-show .posts-show-item {
     padding: 30px;
     background-color: white;
     box-shadow: 0 2px 6px #c1ced7;
@@ -49,19 +50,9 @@
     text-align: center;
   }
  
-  /*　投稿写真　成形*/
-  .posts-image {
-    width: 300px; height: 300px;
-    /*
-    画像の縦横比を保ちながら、全体がそのオブジェクトに収まるようにリサイズ
-    */
-    object-fit: contain;
-    border-radius: 30%;
-    
-  }
 
-  /* アイコン成形
-  .posts-show-item img {
+
+  .posts-show .post-user-name img {
     width: 60px;
     height: 60px;
     border-radius: 40%;
@@ -69,7 +60,14 @@
     vertical-align: middle;
     object-fit: cover;
   }
-  */
+
+  .posts-show .posts-image {
+      width: 350px; 
+      height: 350px;
+      box-shadow: 0 2px 6px #c1ced7;
+      object-fit: contain;
+      border-radius: 30%;  
+  }
   
 
 
@@ -114,6 +112,11 @@
   }
   
   /* posts/new ================================ */
+  .posts-new .form-body
+  {
+    border: dashed 2px #deb887;
+    box-shadow: 0px 0px 0px 10px white;
+  }
   .posts-new textarea {
     font-size: 20px;
     padding: 10px;
@@ -122,22 +125,16 @@
     resize: none;
   }
 
-  .posts-new .form-body input {
-    background-color: #deb887;
-  }
-
   .posts-new textarea::-webkit-input-placeholder {
     font-size: 24px;
     opacity: 0.5;
   }
 
-
-  .post-user-name{
+  .posts-new .post-user-name{
     text-align: left;
   }
   
-
-  .post-user-name img {
+  .posts-new .post-user-name img {
     width: 60px;
     height: 60px;
     border-radius: 40%;
@@ -146,7 +143,46 @@
     object-fit: cover;
   }
 
-  .posts-show-item span{
+  .posts-new .posts-show-item span{
     text-align: left;
   }
 
+  .posts-new #cat-name-content{
+    width: 80%;
+  }
+  .posts-new #submit-button{
+    max-width: 150px;
+  }
+  
+  .posts-new #cat-name-button{
+    width: 15%;
+  }
+
+  .posts-new #submit-button,#cat-name-button{
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    background: #deb887; 
+    color: #fff;
+    font-weight: bold;
+    padding: 13px 10px 10px;
+    border-radius: 5px;
+    border-color: white;
+    border-bottom: 5px solid rgba(0,0,0,0.3);
+  }
+
+  .posts-new #submit-button:hover, #cat-name-button:hover {
+     animation: 1s flash;
+  }
+   
+  .posts-new #submit-button:active,  #cat-name-button:active{
+     border-bottom-width: 0;
+     margin-top: 5px;
+     background: #deb887; 
+  }
+
+  @keyframes flash {
+     from { opacity: 0.5; }
+     to { opacity: 1; }
+  }
