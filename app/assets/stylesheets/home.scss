@@ -202,6 +202,21 @@
   .about-img {
     width: 70%;
   }
+
+ 
+  .explanation h3 {
+    margin-top:  30px;
+    font-family: sans-serif;
+    font-weight: 200;
+  }
+
+  .expl-1,.expl-2{
+    display: inline-block;   
+    vertical-align: middle;  
+  }
+
+
+
   
   /* フォーム================================ */
   .form {
@@ -216,7 +231,7 @@
     margin: 60px 0 20px;
     font-size: 48px;
     color: #deb887;
-    border-bottom: solid 10px #deb887;
+    //border-bottom: solid 10px #deb887;
   }
   
   .form-body {
