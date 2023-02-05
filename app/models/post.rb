@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-    validates :content,{presence: true,length: {maximum: 20}}
+    validates :content,{presence: true,length: {maximum: 100}}
     validates :cat_name,{presence: true,length: {maximum: 10}}
     validates :user_id,{presence: true}
 

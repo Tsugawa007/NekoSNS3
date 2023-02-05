@@ -2,3 +2,11 @@ ja:
   time:
     formats:
       default: "%Y/%m/%d %H:%M"
+  activerecord:
+    attributes:
+        user:
+          name: ユーザー名
+          password_digest: パスワード
+        post:
+          cat_name: 猫ちゃんのお名前
+          content: 文章

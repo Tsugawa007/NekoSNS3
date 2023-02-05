@@ -18,6 +18,7 @@ class PostsController < ApplicationController
   end
 
   def create
+    sleep 1.0
     @post = Post.new(
       content: params[:content],
       user_id: @current_user.id,
@@ -36,6 +37,7 @@ class PostsController < ApplicationController
       $picture_num += 1
       body = File.open("public/post_images/#{@post.post_name}", 'r') { |io| io.read }
       neko = Utils::NekoApi.new(body)
+      sleep 1.0
       if neko.ans == 0
         flash[:notice] = "投稿を作成しました"
         redirect_to("/posts/index") 
@@ -49,7 +51,7 @@ class PostsController < ApplicationController
         render("posts/new")
       end
     else
-      flash[:notice] = "猫が含まれていません"
+      flash[:notice] = "投稿に必要な要素が欠けています"
       @post.destroy
       render("posts/new")
     end

@@ -13,9 +13,7 @@
           <input name="image" id="cat-image-button" type="file">
           <p>猫ちゃんのお名前</p>
           <input name="cat_name" id="cat-name-content"><%= @post.cat_name %></input>
-          <button type="button" id="cat-name-button">マイク</button>
           <p>文章</p>
-          <%= javascript_pack_tag 'posts/speech' %>
           <textarea name="content" ><%= @post.content %></textarea>
           <input type="submit" id ="submit-button" value="投稿">
         </div>
